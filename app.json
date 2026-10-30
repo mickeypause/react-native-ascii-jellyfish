@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "skia-ascii-jelly-fish",
+    "slug": "skia-ascii-jelly-fish",
+    "platforms": ["ios", "android"],
+    "scheme": "skia-ascii-jelly-fish",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      [
+        "expo-status-bar",
+        {
+          "hidden": true
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.skia.asciijellyfish",
+      "infoPlist": {
+        "UIViewControllerBasedStatusBarAppearance": true
+      }
+    },
+    "android": {
+      "package": "com.skia.asciijellyfish"
+    }
+  }
+}

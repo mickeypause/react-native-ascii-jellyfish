@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "unicorn", "oxc"],
+  "categories": {
+    "correctness": "error"
+  },
+  "overrides": [
+    {
+      "files": ["src/AsciiJelly.tsx"],
+      "rules": {
+        // Reanimated shared values are intentionally mutable on the UI runtime.
+        "react/immutability": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "node_modules/**",
+    "ios/**",
+    "android/**",
+    ".expo/**",
+    ".argent/**",
+    "dist/**",
+    "web-build/**"
+  ]
+}
